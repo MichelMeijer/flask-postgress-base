@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Overview of all students{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+  <h1>This will be a list of all students</h1>
+  <!-- <p>
+    {{ result }}<br/>
+    {{ students_name }}
+  </p> -->
+  {% for item in data %}
+<tr>
+    <td>{{item['name']}}</td>
+    <td>{{item['city']}}</td>
+    <td>{{item['addr']}}</td>
+</tr><br/>
+{% endfor %}
+{% endblock %}
