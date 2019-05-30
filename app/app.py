@@ -28,7 +28,7 @@ def database_initialization_sequence():
     test_rec = students(
             'John Doe',
             'Los Angeles',
-            '123 Foobar Ave')
+            '123 Foobar Avenu')
 
     db.session.add(test_rec)
     db.session.rollback()
